@@ -26,3 +26,22 @@ function largestPrimeFactor(number) {
   
   largestPrimeFactor(13195);
   
+
+  function largestPrimeFactor(number) {
+    let divider = 2;
+    var largestFactor;
+    while(divider<=number){
+      if(number%divider == 0){
+        largestFactor = number;
+        number = number/divider;
+      } else {
+        divider++;
+      }
+      
+    }
+    return largestFactor;
+  }
+  
+  console.log(largestPrimeFactor(6));
+  
+  
